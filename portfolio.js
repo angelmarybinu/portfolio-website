@@ -27,7 +27,7 @@ darkmode.onclick = () => {
 };
 const text = "Angel Mary"; // The text you want to animate
 const delay = 100; // The delay between each letter (in milliseconds)
-const repeatDelay = 1000; // The delay between each animation repeat (in milliseconds)
+const repeatDelay = 500; // The delay between each animation repeat (in milliseconds)
 let index = 0; // The current index of the letter being typed
 
 function typeLetter() {

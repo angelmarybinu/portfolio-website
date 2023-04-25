@@ -10,6 +10,7 @@
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   font-family: "Poppins", sans-serif;
+  
 }
 
 :root {
@@ -24,6 +25,16 @@
 
 section {
   padding: 50px 10%;
+}
+#typing-text {
+  /*width: 300px; /* Set the fixed width of the container */
+  /*overflow: hidden; /* Hide any overflow outside of the container */
+ 
+
+   width:250px; /* or whatever width you want. */
+   max-width:250px; /* or whatever width you want. */
+  
+
 }
 
 body.active {

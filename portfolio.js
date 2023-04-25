@@ -25,5 +25,26 @@ darkmode.onclick = () => {
     document.body.classList.remove("active");
   }
 };
+const text = "Angel Mary"; // The text you want to animate
+const delay = 100; // The delay between each letter (in milliseconds)
+const repeatDelay = 1000; // The delay between each animation repeat (in milliseconds)
+let index = 0; // The current index of the letter being typed
+
+function typeLetter() {
+  const typingText = document.getElementById("typing-text");
+  typingText.innerHTML += text[index];
+  index++;
+  if (index >= text.length) {
+    clearInterval(intervalId);
+    setTimeout(() => {
+      typingText.innerHTML = "";
+      index = 0;
+      intervalId = setInterval(typeLetter, delay);
+    }, repeatDelay);
+  }
+}
+
+let intervalId = setInterval(typeLetter, delay);
+
 
                                     
